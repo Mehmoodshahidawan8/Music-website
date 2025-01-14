@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff005d, #00bfff, #00ff00, #ff1493);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.player {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.player-controls {
+  margin-bottom: 20px;
+}
+
+.control-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #ff1493;
+}
+
+.current-song {
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.song-list {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.song-item {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.song-item:hover {
+  background-color: #ff1493;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
